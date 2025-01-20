@@ -13,8 +13,9 @@ else:
     content = file.read()
     print(content)
 finally:
-    file.close()
-    print("File was closed.")
+    raise TypeError("This is an error that I made up.")
+    #file.close()
+    #print("File was closed.")
 
 #with open("a_file.txt") as file:
 #    file.read()
